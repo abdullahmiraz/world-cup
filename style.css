@@ -1,0 +1,263 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;900&display=swap");
+
+*,
+html {
+  margin: 0;
+  padding: 0;
+  /* text-overflow: none; */
+  font-family: "Poppins", sans-serif;
+}
+
+main {
+  margin: 5rem;
+}
+body {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.jumbotron {
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background: #161616;
+  color: white;
+  height: max-content;
+  position: relative;
+}
+.big-title {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 4rem;
+}
+.show-info {
+  width: 50%;
+  /* border: 2px solid orange ; */
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: 400px;
+  align-items: first baseline;
+  justify-content: center;
+  margin-left: 2rem;
+  /* position: relative; */
+}
+.show-info > * {
+  margin-bottom: 2rem;
+}
+.show-img img {
+  /* border: 2px solid blue; */
+  width: max-content;
+  height: 540px;
+  top: 23px;
+}
+
+.show-info > button {
+  border: none;
+  background-color: red;
+  color: #fff;
+  font-weight: 500;
+  font-size: larger;
+  padding: 1rem;
+  border-radius: 5px;
+}
+.play-news {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: space-between;
+  margin-top: 5rem;
+}
+.news-options {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 210px;
+  border: 2px solid red;
+  padding: 1rem;
+  border-radius: 8px;
+  /* width: 15%; */
+  background-color: #161616;
+}
+.news-options > a {
+  text-decoration: none;
+  color: black;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 5px;
+
+  text-align: center;
+  font-weight: 500;
+}
+.news-options a:active {
+  background-color: red;
+  color: white;
+}
+
+.match-news {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.match-news > * {
+  border: 1px solid rgb(206, 203, 203);
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+.news {
+  max-width: 320px;
+}
+.blog-img img {
+  width: 100%;
+}
+.news .blog-info {
+  padding: 0 0 0 1rem;
+  margin-bottom: 1rem;
+}
+
+.news h4 {
+  margin: 0.81rem 0;
+  font-weight: 500;
+}
+
+footer * {
+  font-weight: 400;
+  text-align: center;
+  background-color: #161616;
+  color: white;
+}
+
+footer h1 {
+  position: relative;
+  padding: 1rem 0;
+  padding-top: 8rem;
+}
+footer h1::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  bottom: 4px;
+  left: 10%;
+  width: 80%;
+  height: 1.5px;
+  background-color: #444444;
+}
+
+.services {
+  width: 100%;
+  padding: 2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-bottom: 8rem;
+}
+
+/* ----------------------------
+flexible display measurements 
+------------------------------- */
+@media only screen and (min-width: 740px) and (max-width: 980px) {
+  .jumbotron {
+    position: relative;
+  }
+  .big-title {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 2rem;
+  }
+
+  .show-img img {
+    /* border: 2px solid blue; */
+    width: 100%;
+    /* height: 120%; */
+  }
+
+  .show-info > button {
+    padding: 0.2rem;
+  }
+  .play-news {
+    flex-direction: column;
+    align-items: center;
+  }
+  .news-options {
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    height: 60px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .match-news {
+    width: 100%;
+  }
+  .news-options a {
+    border: 1px solid rgb(207, 207, 207);
+    color: black;
+  }
+  .news {
+    max-width: 280px;
+  }
+}
+
+@media only screen and (max-width: 740px) {
+  body {
+    overflow-x: hidden;
+  }
+  main {
+    margin: 0.5rem;
+  }
+  .jumbotron {
+    flex-direction: column;
+    margin: 0;
+  }
+  .big-title {
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 2rem;
+  }
+
+  .show-img img {
+    /* border: 2px solid blue; */
+    height: 300px;
+    margin: 0 auto;
+  }
+
+  .show-info {
+    width: 90%;
+    margin: 0;
+    text-align: center;
+    align-items: center;
+  }
+
+  .play-news {
+    flex-direction: column;
+    align-items: center;
+  }
+  .news-options {
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+  }
+  .match-news {
+    width: 100%;
+    justify-content: center;
+  }
+  .news-options a {
+    border: 1px solid rgb(207, 207, 207);
+    color: black;
+  }
+  .news {
+    width: 100%;
+  }
+
+  .services {
+    flex-direction: column;
+  }
+}
